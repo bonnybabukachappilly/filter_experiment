@@ -1,0 +1,26 @@
+[workspace]
+authors = ["bonnybabukachappilly <bonnybabukachappilly@gmail.com>"]
+channels = ["conda-forge"]
+name = "sensor_fusion"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+smoke = "python smoke_test.py"
+lab = "jupyter lab"
+run-all = "python run_all.py"
+
+[dependencies]
+python = "3.12.*"
+numpy = ">=2.5.4,<3"
+scipy = ">=1.18.1,<2"
+matplotlib = ">=3.11.2,<4"
+pandas = ">=3.0.6,<4"
+jupyterlab = ">=4.6.4,<5"
+ipykernel = ">=7.4.0,<8"
+
+[pypi-dependencies]
+mujoco = ">=3.16.0, <4"
+filterpy = ">=1.4.5, <2"
+ahrs = ">=0.4.0, <0.5"
+evo = ">=1.38.0, <2"

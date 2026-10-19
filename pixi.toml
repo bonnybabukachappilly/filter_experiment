@@ -9,6 +9,7 @@ version = "0.1.0"
 smoke = "python smoke_test.py"
 lab = "jupyter lab"
 run-all = "python run_all.py"
+live = "python src/live.py"
 
 [dependencies]
 python = "3.12.*"
@@ -24,3 +25,5 @@ mujoco = ">=3.16.0, <4"
 filterpy = ">=1.4.5, <2"
 ahrs = ">=0.4.0, <0.5"
 evo = ">=1.38.0, <2"
+jupyterlab-lsp = ">=5.3.0, <6"
+jedi-language-server = ">=0.47.0, <0.48"

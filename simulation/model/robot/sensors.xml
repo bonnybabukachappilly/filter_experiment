@@ -1,0 +1,12 @@
+<mujoco>
+
+    <!-- Angular velocity at the IMU site -->
+    <gyro name="gyro" site="imu" />
+
+    <!-- Left wheel encoder -->
+    <jointvel name="enc_l" joint="wl" />
+
+    <!-- Right wheel encoder -->
+    <jointvel name="enc_r" joint="wr" />
+
+</mujoco>

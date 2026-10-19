@@ -1,0 +1,6 @@
+<mujoco>
+
+    <velocity name="act_l" joint="wl" kv="0.5" ctrlrange="-30 30" ctrllimited="true" />
+    <velocity name="act_r" joint="wr" kv="0.5" ctrlrange="-30 30" ctrllimited="true" />
+
+</mujoco>

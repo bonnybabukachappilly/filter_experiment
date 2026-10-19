@@ -1,0 +1,25 @@
+<mujoco>
+    <asset>
+        <!-- Sky -->
+        <texture name="sky" type="skybox" builtin="gradient" rgb1="0.55 0.72 0.88"
+            rgb2="0.12 0.18 0.28" width="512" height="512" />
+
+        <!-- Floor pattern -->
+        <texture name="floor_grid" type="2d" builtin="checker" rgb1="0.32 0.34 0.36"
+            rgb2="0.28 0.30 0.32" width="512" height="512" />
+
+        <material name="floor_material" texture="floor_grid" texrepeat="80 80" reflectance="0.02" />
+
+        <!-- Robot chassis -->
+        <material name="chassis_material" rgba="0.16 0.19 0.24 1" />
+
+        <!-- Wheels -->
+        <material name="wheel_material" rgba="0.045 0.05 0.06 1" />
+
+        <!-- Top panel -->
+        <material name="top_material" rgba="0.95 0.28 0.08 1" />
+
+        <!-- Caster -->
+        <material name="caster_material" rgba="0.35 0.38 0.42 1" />
+    </asset>
+</mujoco>

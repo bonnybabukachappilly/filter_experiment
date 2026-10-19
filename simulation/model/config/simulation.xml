@@ -1,0 +1,10 @@
+<mujoco>
+
+    <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast" />
+
+    <visual>
+        <headlight diffuse="0.8 0.8 0.8" ambient="0.3 0.3 0.3" />
+        <global offwidth="1920" offheight="1080" />
+    </visual>
+
+</mujoco>

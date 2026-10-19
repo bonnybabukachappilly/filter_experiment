@@ -264,15 +264,19 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/websocket-client-1.9.2-pyh5ded981_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.1-pyh5ded981_0.conda
       - pypi: https://files.pythonhosted.org/packages/03/c0/a6d8be9c43e4456fb9597fdf8b5e0ce1f0a5df41503acce6d869536e4e23/websockets-17.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/05/e1/ad4afa632b4ea58f422391d11e86b5100b5578879af6bf04bf5aaf4beede/jedi_language_server-0.47.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/32/91/30151a39f7570f448ed84529390628a651d7f27c87d73c9b887f8189695e/docutils-0.23-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/36/76/931b879e1ad5e287c4ed9b60ccea807e63e06cd257829e154c79394abb66/ahrs-0.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/46/bd/551ee6af426af84ca33e02622be722925c196608e9127d731ef17c47f06e/argcomplete-3.7.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/55/d9/e3867222474f6c1b76e89f3bd914595af69f55bf2c1866e984c548afdc15/lz4-4.4.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/56/7b/af3d0da15bed3a8665419bb3a630585756920f4ad67abfdfef26240ebcc0/docstring_to_markdown-0.17-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/5a/3d/589663aeeacd59bb2f3e8596bfd3e81cf0fb18d70bb433199041f469771b/etils-1.14.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/69/84/1b98671314ea5f40397586b6cd14db913de3196333be558fdc177e61708f/glfw-2.10.2-py2.py3-none-manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/7b/f0/92f2d609d6642b5f30cb50a885d2bf1483301c69d5786286500d15651ef2/lsprotocol-2025.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/83/11/00d3c3dfc25ad54e731d91449895a79e4bf2384dc3ac01809010ba88f6d5/seaborn-0.13.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/99/1daab4d3bc6528e911712356e97b99e07361514ba9f1ba93279dede79264/evo-1.38.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/95/7a/cc44f9b548f126372ed48ca0f9691f7802204e1dbdea14ab091f411900fb/jupyterlab_lsp-5.3.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/9f/f9/ae40bed89942cb7d0334995adb21a3d9254eba88444451193aa477de053a/apsw-3.54.0.0-cp312-cp312-manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b2/f9/be6947e7e86e22b3a4cb83e40e88213481bc387e713eeae92a18c2fc165f/rosbags-0.11.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b3/7d/01e62f59e4166af1be6238d9f2b7f3453630c51b8044b412d05b5606532a/absl_py-2.5.1-py3-none-any.whl
@@ -280,9 +284,11 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/d1/8d/02517dee6ae29fa22c4c739a07c6f295db9faa2a23028f9e48b28c2f697f/mujoco-3.16.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/de/e4/1ba6f44e491c4eece978685230dde56b14d51a0365bc1b774ddaa94d14cd/pyopengl-3.1.10-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e8/cf/22794a399d99480486120e26e879ef008e21f5e85274c2ed591d568bb326/cattrs-26.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ea/11/e8953226d658ae67e3e002abaa60a101c693f9c57d74974001729afab5ef/numexpr-2.14.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/ef/82/7a9d0550484a62c6da82858ee9419f3dd1ccc9aa1c26a1e43da3ecd20b0d/natsort-8.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f6/1d/ac8914360460fafa1990890259b7fa5ef7ba4cd59014e782e4ab3ab144d8/filterpy-1.4.5.zip
+      - pypi: https://files.pythonhosted.org/packages/fd/1a/208293b6c350f5abea6941d5606080d4a492644052504f5312e5de30a902/pygls-2.1.1-py3-none-any.whl
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-20_gnu.conda
   build_number: 20
@@ -4203,6 +4209,18 @@ packages:
   version: '17.2'
   sha256: 6627b913b8586b1c06db9516b31dd0dfbc621de3bb9312616d92a7e44f268a5b
   requires_python: '>=3.11'
+- pypi: https://files.pythonhosted.org/packages/05/e1/ad4afa632b4ea58f422391d11e86b5100b5578879af6bf04bf5aaf4beede/jedi_language_server-0.47.0-py3-none-any.whl
+  name: jedi-language-server
+  version: 0.47.0
+  sha256: 0e00d5af41c1a966c9ec73221e81b1af3b8c0243d29477e5441c661d5b61ec3e
+  requires_dist:
+  - cattrs>=23.1.2
+  - docstring-to-markdown<1
+  - jedi>=0.19.2,<0.21
+  - lsprotocol>=2023.0.1
+  - pygls>=2.0.0,<3
+  - typing-extensions>=4.5.0,<5 ; python_full_version < '3.10'
+  requires_python: '>=3.10'
 - pypi: https://files.pythonhosted.org/packages/32/91/30151a39f7570f448ed84529390628a651d7f27c87d73c9b887f8189695e/docutils-0.23-py3-none-any.whl
   name: docutils
   version: '0.23'
@@ -4247,6 +4265,14 @@ packages:
   - sphinx-bootstrap-theme ; extra == 'docs'
   - flake8 ; extra == 'flake8'
   requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/56/7b/af3d0da15bed3a8665419bb3a630585756920f4ad67abfdfef26240ebcc0/docstring_to_markdown-0.17-py3-none-any.whl
+  name: docstring-to-markdown
+  version: '0.17'
+  sha256: fd7d5094aa83943bf5f9e1a13701866b7c452eac19765380dead666e36d3711c
+  requires_dist:
+  - importlib-metadata>=3.6
+  - typing-extensions>=4.6
+  requires_python: '>=3.7'
 - pypi: https://files.pythonhosted.org/packages/5a/3d/589663aeeacd59bb2f3e8596bfd3e81cf0fb18d70bb433199041f469771b/etils-1.14.0-py3-none-any.whl
   name: etils
   version: 1.14.0
@@ -4434,6 +4460,14 @@ packages:
   - zstandard ; python_full_version < '3.14' and extra == 'test-full'
   - tqdm ; extra == 'tqdm'
   requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/7b/f0/92f2d609d6642b5f30cb50a885d2bf1483301c69d5786286500d15651ef2/lsprotocol-2025.0.0-py3-none-any.whl
+  name: lsprotocol
+  version: 2025.0.0
+  sha256: f9d78f25221f2a60eaa4a96d3b4ffae011b107537facee61d3da3313880995c7
+  requires_dist:
+  - attrs>=21.3.0
+  - cattrs!=23.2.1
+  requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/83/11/00d3c3dfc25ad54e731d91449895a79e4bf2384dc3ac01809010ba88f6d5/seaborn-0.13.2-py3-none-any.whl
   name: seaborn
   version: 0.13.2
@@ -4485,6 +4519,14 @@ packages:
   - pyqt6 ; extra == 'gui'
   - rerun-sdk>=0.34.0 ; extra == 'rerun'
   requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/95/7a/cc44f9b548f126372ed48ca0f9691f7802204e1dbdea14ab091f411900fb/jupyterlab_lsp-5.3.0-py3-none-any.whl
+  name: jupyterlab-lsp
+  version: 5.3.0
+  sha256: 89f519c8de8ca0835551f40ddf69bf6a769411b0b1e75f5752fbe38d45e75f23
+  requires_dist:
+  - jupyter-lsp>=2.0.0
+  - jupyterlab>=4.1.0,<5.0.0a0
+  requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/9f/f9/ae40bed89942cb7d0334995adb21a3d9254eba88444451193aa477de053a/apsw-3.54.0.0-cp312-cp312-manylinux_2_28_x86_64.whl
   name: apsw
   version: 3.54.0.0
@@ -4551,6 +4593,25 @@ packages:
   name: pyopengl
   version: 3.1.10
   sha256: 794a943daced39300879e4e47bd94525280685f42dbb5a998d336cfff151d74f
+- pypi: https://files.pythonhosted.org/packages/e8/cf/22794a399d99480486120e26e879ef008e21f5e85274c2ed591d568bb326/cattrs-26.2.1-py3-none-any.whl
+  name: cattrs
+  version: 26.2.1
+  sha256: a12aaa3453dc8f633a815293179f08b7421ed18d2575c459c3c736f840beac24
+  requires_dist:
+  - attrs>=25.4.0
+  - exceptiongroup>=1.1.1 ; python_full_version < '3.11'
+  - typing-extensions>=4.14.0
+  - pymongo>=4.4.0 ; extra == 'bson'
+  - cbor2>=5.4.6 ; extra == 'cbor2'
+  - msgpack>=1.0.5 ; extra == 'msgpack'
+  - msgspec>=0.21.1 ; implementation_name == 'cpython' and extra == 'msgspec'
+  - orjson>=3.11.3 ; implementation_name == 'cpython' and extra == 'orjson'
+  - pyyaml>=6.0 ; extra == 'pyyaml'
+  - tomlkit>=0.11.8 ; extra == 'tomlkit'
+  - tomli-w>=1.1.0 ; extra == 'tomllib'
+  - tomli>=1.1.0 ; python_full_version < '3.11' and extra == 'tomllib'
+  - ujson>=5.10.0 ; extra == 'ujson'
+  requires_python: '>=3.10'
 - pypi: https://files.pythonhosted.org/packages/ea/11/e8953226d658ae67e3e002abaa60a101c693f9c57d74974001729afab5ef/numexpr-2.14.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
   name: numexpr
   version: 2.14.2
@@ -4574,3 +4635,13 @@ packages:
   - numpy
   - scipy
   - matplotlib
+- pypi: https://files.pythonhosted.org/packages/fd/1a/208293b6c350f5abea6941d5606080d4a492644052504f5312e5de30a902/pygls-2.1.1-py3-none-any.whl
+  name: pygls
+  version: 2.1.1
+  sha256: 510a6dea2476177230c7d851125e5948efdf3fdb9ebfd8543fc434972f8faed4
+  requires_dist:
+  - attrs>=24.3.0
+  - cattrs>=23.1.2
+  - lsprotocol==2025.0.0
+  - websockets>=13.0 ; extra == 'ws'
+  requires_python: '>=3.9'

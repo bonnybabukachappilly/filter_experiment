@@ -1,0 +1,45 @@
+<mujoco>
+
+    <body name="base" pos="0 0 0.033">
+
+        <!-- Free motion of the entire robot -->
+        <freejoint name="root" />
+
+        <!-- Main chassis -->
+        <geom name="chassis" type="box" size="0.07 0.05 0.02" pos="0 0 0.02" mass="1.0"
+            material="chassis_material" />
+
+        <!-- Top panel -->
+        <geom name="top_panel" type="box" size="0.02 0.03 0.005" pos="0.04 0 0.045" mass="0.001"
+            material="top_material" contype="0" conaffinity="0" />
+
+        <!-- Passive caster -->
+        <geom name="caster" type="sphere" size="0.015" pos="-0.06 0 -0.018" mass="0.05"
+            material="caster_material" friction="0.05 0.005 0.0001" />
+
+        <!-- IMU reference frame -->
+        <site name="imu" pos="0 0 0.02" size="0.005" rgba="0 1 0 1" />
+
+        <!-- Left wheel -->
+        <body name="wheel_l" pos="0 0.08 0">
+
+            <joint name="wl" type="hinge" axis="0 1 0" armature="0.002" damping="0.001" />
+
+            <geom name="wheel_l_geom" type="cylinder" size="0.033 0.01" euler="90 0 0" mass="0.1"
+                material="wheel_material" friction="1.0 0.005 0.0001" />
+
+        </body>
+
+        <!-- Right wheel -->
+        <body name="wheel_r" pos="0 -0.08 0">
+
+            <joint name="wr" type="hinge" axis="0 1 0" armature="0.002" damping="0.001" />
+
+            <geom name="wheel_r_geom" type="cylinder" size="0.033 0.01" euler="90 0 0" mass="0.1"
+                material="wheel_material" friction="1.0 0.005 0.0001" />
+
+        </body>
+
+    </body>
+
+</mujoco>

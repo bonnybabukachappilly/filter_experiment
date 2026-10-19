@@ -1,0 +1,19 @@
+<mujoco model="diff_drive_bot">
+
+    <include file="../config/simulation.xml" />
+    <include file="../assets/materials.xml" />
+
+    <worldbody>
+        <include file="./world.xml" />
+        <include file="../robot/robot.xml" />
+    </worldbody>
+
+    <actuator>
+        <include file="../robot/actuators.xml" />
+    </actuator>
+
+    <sensor>
+        <include file="../robot/sensors.xml" />
+    </sensor>
+
+</mujoco>

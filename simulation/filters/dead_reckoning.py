@@ -4,10 +4,10 @@ import math
 
 
 class DeadReckoning:
-    def __init__(self, x=0.0, y=0.0, yaw=0.0):
-        self.x = x
-        self.y = y
-        self.yaw = yaw
+    def __init__(self, x=0.0, y=0.0, yaw=0.0) -> None:
+        self.x: float = x
+        self.y: float = y
+        self.yaw: float = yaw
 
     def update(self, v, w, dt):
         self.x += v * math.cos(self.yaw) * dt

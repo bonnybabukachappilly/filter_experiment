@@ -19,20 +19,35 @@ class Plotter:
 
 
 class LivePlot:
-    def __init__(self):
-        plt.ion()  # interactive mode: the window updates without blocking
+    STYLES = ["g--", "b-", "m-", "c-", "y-"]
+
+    def __init__(self, names):
+        plt.ion()
         self.fig, self.ax = plt.subplots()
-        self.line, = self.ax.plot([], [], label="truth")
+        self.line, = self.ax.plot([], [], "k-", label="truth")
         self.gps_line, = self.ax.plot([], [], "r.", label="gps")
-        self.dr_line, = self.ax.plot([], [], "g--", label="dead reckoning")
-        self.dx, self.dy = [], []
-        self.gx, self.gy = [], []
+        self.est = {}
+        for n, style in zip(names, self.STYLES):
+            ln, = self.ax.plot([], [], style, label=n)
+            self.est[n] = (ln, [], [])
+        self.gx, self.gy, self.xs, self.ys = [], [], [], []
         self.ax.legend()
-        self.xs, self.ys = [], []
         self.ax.set_aspect("equal", adjustable="datalim")
         self.ax.set_xlabel("x [m]")
         self.ax.set_ylabel("y [m]")
         self.ax.grid(True)
+        self.pred = {}
+
+    def add_gps(self, x, y):
+        self.gx.append(x)
+        self.gy.append(y)
+        self.gps_line.set_data(self.gx, self.gy)
+
+    def add_est(self, name, x, y):
+        ln, xs, ys = self.est[name]
+        xs.append(x)
+        ys.append(y)
+        ln.set_data(xs, ys)
 
     def update(self, x, y):
         self.xs.append(x)
@@ -40,17 +55,14 @@ class LivePlot:
         self.line.set_data(self.xs, self.ys)
         self.ax.relim()
         self.ax.autoscale_view()
-        plt.pause(0.001)  # let the window redraw
+        plt.pause(0.001)
 
-    def add_gps(self, x, y):
-        self.gx.append(x)
-        self.gy.append(y)
-        self.gps_line.set_data(self.gx, self.gy)
-
-    def add_dr(self, x, y):
-        self.dx.append(x)
-        self.dy.append(y)
-        self.dr_line.set_data(self.dx, self.dy)
+    def set_pred(self, name, xs, ys):
+        if name not in self.pred:
+            self.pred[name], = self.ax.plot([], [], ":", lw=3,
+                                            label=f"{name} prediction")
+            self.ax.legend()
+        self.pred[name].set_data(xs, ys)
 
 
 class SpeedPlot:
